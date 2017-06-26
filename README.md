@@ -1,4 +1,4 @@
-This is a hobby project I worked on after attending a Xamarin event.
+This was a hobby project I worked on after attending a Xamarin event.
 
 The project includes two Visual studio projects:
 
