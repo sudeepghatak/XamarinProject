@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyIntergenites.Client.Views.AllPage" Padding="10"
+             Title="All" BackgroundColor="Black" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+    </Grid>
+    <StackLayout    Orientation="Vertical"         >
+        <StackLayout>
+            <ListView x:Name="IntergenitesListView" 
+            HasUnevenRows="True"
+            ItemTapped="IntergenitesListView_ItemTapped">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+                    <StackLayout Orientation="Horizontal" >
+            <StackLayout  BackgroundColor="Yellow" WidthRequest="200" Padding="10"
+                         >
+              <Label Text="{Binding Name} " 
+                     FontSize="15"
+                     TextColor="Black"/>
+              
+         
+          </StackLayout>
+                        <StackLayout  BackgroundColor="Black" Padding="10"
+                         >
+   
+                        <Label Text="{Binding Department}"
+                     FontSize="15" 
+                     TextColor="Yellow"/>
+
+                    </StackLayout>
+                    </StackLayout>
+            
+                </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+    </StackLayout>
+    <StackLayout >
+        <Button Text="Refresh" BackgroundColor="Black" TextColor="Yellow" Clicked="Refresh_Clicked"/>
+    </StackLayout>
+    </StackLayout>
+</ContentPage>
