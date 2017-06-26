@@ -8,6 +8,6 @@ The project includes two Visual studio projects:
 
 If you want to connect to a different web service and a different database, modify the following files.
 
--> Change the web service Url in Constants.cs under Intergen.Client project. 
--> Change the database connection string in the web.config file of the Intergen.Web project. 
+1) Change the web service Url in Constants.cs under Intergen.Client project.
+2) Change the database connection string in the web.config file of the Intergen.Web project. 
 
