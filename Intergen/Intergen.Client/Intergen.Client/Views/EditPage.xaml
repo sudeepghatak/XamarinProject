@@ -2,20 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyIntergenites.Client.Views.EditPage"
-             Title="Edit">
+             Title="Edit" >
   
   <StackLayout>
     <Entry x:Name="NameEntry"
-           FontSize="15"/>
+           FontSize="15" />
     <Entry x:Name="DepartmentEntry"
-           FontSize="15"/>
+           FontSize="15" />
     <Button Text="Edit Intergenite"
-            FontSize="30"
+            FontSize="15" 
             TextColor="Yellow"
             BackgroundColor="Black"
             Clicked="EditIntergenite_Clicked"/>
     <Button Text="Delete Intergenite"
-          FontSize="30"
+          FontSize="15" 
           TextColor="Yellow"
           BackgroundColor="Red"
           Clicked="DeleteIntergenite_Clicked"/>

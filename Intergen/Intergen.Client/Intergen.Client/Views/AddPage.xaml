@@ -2,16 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyIntergenites.Client.Views.AddPage"
-             Title="Add">
+             Title="Add" >
   
   <StackLayout Orientation="Vertical">
-    <Entry x:Name="NameEntry"
+    <Entry x:Name="NameEntry" 
            FontSize="15"
            Placeholder="Name"/>
     <Entry x:Name="DepartmentEntry"
            FontSize="15"
            Placeholder="Department"/>
-    <Button Text="Add Intergenite"
+    <Button Text="Add Intergenite" 
             FontSize="15"
             TextColor="White"
             BackgroundColor="Black"
